@@ -13,6 +13,10 @@ if (reservaForm) {
       return;
     }
 
+    document.getElementById("pessoas").addEventListener("input", function (e) {
+    this.value = this.value.replace(/[^0-9]/g, "");
+});
+
     const mensagem = `Olá! Gostaria de fazer uma reserva:\n\n📅 Data: ${data}\n👥 Número de pessoas: ${pessoas}\n🏖️ Tipo de passeio: ${tipo}`;
     const numeroWhatsApp = "558293511294";
     const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
@@ -94,3 +98,4 @@ if (toggleBtn && navbar) {
     navbar.classList.toggle("active");
   });
 }
+
