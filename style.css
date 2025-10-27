@@ -240,6 +240,20 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo,
+  .footer-links,
+  .footer-contato {
+    min-width: unset;
+    margin-bottom: 1.5rem;
+  }
+  
 }
 
 /* SOBRE O PASSEIO */
@@ -659,4 +673,5 @@ form button:hover {
 
 html {
   scroll-behavior: smooth;
+
 }
